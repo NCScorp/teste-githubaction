@@ -13,4 +13,4 @@ jobs:
     - run: |
         ssh clone git@github.com:NCScorp/teste-githubaction.git
         git pull origin main
-      working-directory: /home/elnico/Documents/vscode/projeto/
+      working-directory: /home/elnico/Documentos/vscode/projeto/
