@@ -1,0 +1,4 @@
+user/repository:
+  - .github/workflows/*.yml
+  - teste-githubaction/**/*
+  - teste-githubaction/*
