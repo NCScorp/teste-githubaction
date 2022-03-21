@@ -27,10 +27,11 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: git pull it
+        working-directory: ${{secrets.WORKSPACE_DIRECTORY}}
         run: |
           git config user.name nicolas
           git config user.email nicolasscorpelini@nasajon.com.br
           git config github.token ${{secrets.GITHUB_TOKEN}}
           git pull origin main
-        working-directory: ${{secrets.WORKSPACE_DIRECTORY}}      
+              
 
