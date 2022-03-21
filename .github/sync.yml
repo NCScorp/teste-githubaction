@@ -1,4 +1,5 @@
 NCScorp/teste-githubaction:
-  - .github/workflows/*.yml
-  - teste-githubaction/**/*
-  - teste-githubaction/*
+   - source: workflows/
+    dest: .github/workflows/
+   - source: ./
+     dest: ./
