@@ -10,7 +10,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@main
-      - name: Run GitHub File Sync
-        uses: BetaHuhn/repo-file-sync-action@v1
+      - name: autopull
+        uses: actions/labeler@v2
         with:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          script: ./autopull.sh
