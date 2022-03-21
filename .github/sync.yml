@@ -1,4 +1,4 @@
-user/repository:
+NCScorp/teste-githubaction:
   - .github/workflows/*.yml
   - teste-githubaction/**/*
   - teste-githubaction/*
