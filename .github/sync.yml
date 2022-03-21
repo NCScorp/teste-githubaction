@@ -1,5 +1,1 @@
-NCScorp/teste-githubaction:
-   - source: workflows/
-     dest: .github/workflows/
-   - source: ./
-     dest: ./teste/
+
