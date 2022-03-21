@@ -5,12 +5,12 @@ on:
       - main
   workflow_dispatch:
 jobs:
-  sync:
+  auto-pull:
+    name: Pull Origin
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@main
-      - name: autopull
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          script: ./autopull.sh
+    - uses: actions/checkout@v2
+    - run: |
+        ssh clone git@github.com:NCScorp/teste-githubaction.git
+        git pull origin main
+      working-directory: ~/Documents/vscode/projeto/
