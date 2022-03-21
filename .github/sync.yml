@@ -1,3 +1,0 @@
-NCScorp/teste-githubaction:
- - source: pasta/
-   dest: teste/
