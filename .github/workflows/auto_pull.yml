@@ -32,4 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: automate pull
         run: |
+          mkdir anaximandro
+          cd anaximandro
+          touch zeca.txt
           git pull
