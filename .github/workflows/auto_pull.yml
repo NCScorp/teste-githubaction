@@ -34,4 +34,4 @@ jobs:
         run: |
           touch test.txt && mv test.txt ~/Documentos/vscode/aqui/test.txt
           touch test2.txt && mv test2.txt ~/Documentos/vscode/aqui/test2.txt
-          working-directory: ~/Documentos/vscode/aqui/
+        working-directory: ~/Documentos/vscode/aqui/
