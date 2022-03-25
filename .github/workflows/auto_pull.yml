@@ -33,4 +33,4 @@ jobs:
       - name: automate pull
         run: |
           git pull
-          mv teste-githubaction ~/Documentos/vscode/aqui/teste-githubaction
+          ls
