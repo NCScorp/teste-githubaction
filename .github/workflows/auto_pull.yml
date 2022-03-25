@@ -33,4 +33,4 @@ jobs:
       - name: automate pull
         run: |
           touch test.txt && mv test.txt ~/Documentos/vscode/aqui/test.txt
-          working-directory:~/Documentos/vscode/aqui
+          touch test2.txt && mv test.txt ~/Documentos/vscode/aqui/test2.txt          
